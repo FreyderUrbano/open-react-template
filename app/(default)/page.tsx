@@ -8,6 +8,8 @@ import Features from '@/components/features'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
+import Planes from '@/components/planes'
+import Plan from '@/components/ui/plan'
 
 export default function Home() {
   return (

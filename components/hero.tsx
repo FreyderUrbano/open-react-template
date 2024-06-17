@@ -44,7 +44,6 @@ export default function Hero() {
             video="/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080} />
-
         </div>
 
       </div>
