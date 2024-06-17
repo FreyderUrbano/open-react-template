@@ -15,7 +15,7 @@ export default function Banner() {
                 className="font-medium hover:underline text-slate-50"
                 href="https://github.com/cruip/open-react-template"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
               >
                 Download<span className="hidden sm:inline"> on GitHub</span>
               </a>{' '}
