@@ -9,13 +9,14 @@ import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
 import Planes from '@/components/planes'
-import Plan from '@/components/ui/plan'
+import Plan from '@/components/plan'
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Plan />
+      {/*<Planes />*/ }
       <Newsletter />
       <Features />
       <Zigzag />
