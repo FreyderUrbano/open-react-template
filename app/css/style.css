@@ -29,12 +29,18 @@
 }
 
 .image-frame {
-    width: 100%;
+    width: 100vw;
     height: 500px;
+}
+
+.title{
+    text-align: center;
+    padding: auto;
 }
 
 .title-field {
     text-align: center;
+    padding: 20px;
 }
 
 .button-css {
