@@ -10,14 +10,9 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
-             
+
             </Link>
           </div>
-
-         
-
-          
-
         </div>
       </div>
     </header>

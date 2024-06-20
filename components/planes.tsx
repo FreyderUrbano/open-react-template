@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import Slider from "react-slick"
 
 export default function Planes() {
@@ -32,8 +33,8 @@ export default function Planes() {
                         <Slider {...settings}>
                             {images.map((image) => (
                                 <div key={image.id}>
-                                    <h3 className='title-image'>{image.title}</h3>
-                                    <img className="img-dimensions" src={image.url} alt={image.title} />
+                                    <h3>{image.title}</h3>
+                                    <img src={image.url} alt={image.title} />
                                 </div>
                             ))}
                         </Slider>

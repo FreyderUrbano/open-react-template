@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <>
       {/*<Hero />*/}
-     
       <Menu />
       <Plan />
       {/*<Planes />*/}
