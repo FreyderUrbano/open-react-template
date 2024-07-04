@@ -65,6 +65,20 @@
 
 /*ESTILOS PARA PAGINA PRINCIPAL*/
 
+#logo{
+    background: transparent;
+}
+
+#logo :hover{
+    transition: 2s;
+    transform: scale(1);
+}
 #fondoBlanco{
     background-color: white;
+}
+
+/*ESTILOS PARA MENU PRINCIPAL*/
+#menu{
+    background-color: transparent;
+    margin-top: 20px;
 }
