@@ -31,7 +31,7 @@ export default function Plan() {
             <section className="relative pt-32 pb-10 md:pt-10 md:pb-16">
                 <div className="image-container">
                     <div className="relative pt-32 pb-10 md:pt-10 md:pb-16">
-                        <h1 className="title">CANCHAS SINTETICAS</h1>
+                        <h1 className="title">NUESTRAS CANCHAS DESTACADAS</h1>
                         <h3 className="title-field" >{title[movImage]}</h3>
                         <img className="image-frame" src={images[movImage]} alt={title[movImage]} />
                     </div>

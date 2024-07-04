@@ -33,7 +33,7 @@
     height: 500px;
 }
 
-.title{
+.title {
     text-align: center;
     padding: auto;
 }
@@ -50,4 +50,21 @@
 
 .button-css button {
     margin: 0 20px;
+}
+
+/*ESTILOS PARA SUBMENU*/
+
+#borde {
+    padding: 20px;
+}
+
+#borde :hover {
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+/*ESTILOS PARA PAGINA PRINCIPAL*/
+
+#fondoBlanco{
+    background-color: white;
 }

@@ -11,16 +11,17 @@ import Testimonials from '@/components/testimonials'
 import Planes from '@/components/planes'
 import Plan from '@/components/plan'
 import Menu from '@/components/menu'
+import SubMenu from '@/components/submenu'
 
 export default function Home() {
   return (
     <>
       {/*<Hero />*/}
       <Menu />
+      <SubMenu />
       <Plan />
       {/*<Planes />*/}
       <Newsletter />
-      <Features />
       <Zigzag />
       <Testimonials />
     </>
