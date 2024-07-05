@@ -1,74 +1,142 @@
 import Image from 'next/image'
 
-import TestimonialImage01 from '@/public/images/testimonial-01.jpg'
-import TestimonialImage02 from '@/public/images/testimonial-02.jpg'
-import TestimonialImage03 from '@/public/images/testimonial-03.jpg'
+import TestimonialImage01 from '@/public/images/cancha.jpeg'
+import TestimonialImage02 from '@/public/images/cancha1.jpeg'
+import TestimonialImage03 from '@/public/images/apache.jpg'
+import TestimonialImage04 from '@/public/images/field.jpg'
+import TestimonialImage05 from '@/public/images/cancha2.jpeg'
+import TestimonialImage06 from '@/public/images/cancha3.jpg'
+import TestimonialImage07 from '@/public/images/xxx.png'
+import TestimonialImage08 from '@/public/images/corr.png'
 
 export default function Testimonials() {
+
+  const imagenes = ['https://th.bing.com/th/id/R.089b16aebcfd18af6ff9c725318b65e0?rik=Ug%2fvoYlEElak8A&pid=ImgRaw&r=0',
+    'https://th.bing.com/th/id/R.c223eb1d12de592ea513a285d9294320?rik=l7Ot2%2fASfaIyMw&riu=http%3a%2f%2fstatic.t13.cl%2fimages%2fsizes%2f1200x675%2f1491127204-95410191gettyimages-488144002.jpg&ehk=dettdl4rxdcGYrLDeu4AYIjFzmztEQ2lT3bwX%2bcMI8U%3d&risl=&pid=ImgRaw&r=0',
+    'https://www.parqueygrama.com/wp-content/uploads/2018/02/canchas-de-futbol-sinteticas-grama-de-futbol.jpg']
+
+  const namesField = ["Monaco", "Bomberos", "Fuerte Apache", "Miraflores", "CocaCola", "Tejar"]
+
+  const precio1 = ["$ 45.000 - $ 65.000 / hora"]
+  const precio2 = ["$ 50.000 - $ 70.000 / hora"]
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-gray-800">
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Testimonials</h2>
-            <p className="text-xl text-gray-400">Este componente se llama Testimonials esta en components/ui/testimonials.tsx.</p>
-          </div>
-
-          {/* Testimonials */}
+          {/*Canchas San Juan De Pasto*/}
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
 
-            {/* 1st testimonial */}
+            {/* 1ra cancha */}
             <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up">
               <div>
                 <div className="relative inline-flex flex-col mb-4">
-                  <Image className="rounded-full" src={TestimonialImage01} width={48} height={48} alt="Testimonial 01" />
-                  <svg className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 13.517c0-2.346.611-4.774 1.833-7.283C3.056 3.726 4.733 1.648 6.865 0L11 2.696C9.726 4.393 8.777 6.109 8.152 7.844c-.624 1.735-.936 3.589-.936 5.56v4.644H0v-4.531zm13 0c0-2.346.611-4.774 1.833-7.283 1.223-2.508 2.9-4.586 5.032-6.234L24 2.696c-1.274 1.697-2.223 3.413-2.848 5.148-.624 1.735-.936 3.589-.936 5.56v4.644H13v-4.531z" />
-                  </svg>
+                  <Image className="logoImage" src={TestimonialImage01} alt="logoImage" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Juana Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+              <div className='h3 mb-2' id='titletext'>{namesField[0]}</div>
+              <div className='h4 mb-2 text-center' >Servicios</div>
+              <div className='text-lg text-gray-400 text-center'> - Parqueadero  <span className='ml-2'>🅿️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Promociones <span className='ml-2'>🕒</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                <cite className="text-gray-200 not-italic">{precio2}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
               </div>
             </div>
 
-            {/* 2nd testimonial */}
+            {/* 2nd cancha */}
             <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
               <div>
                 <div className="relative inline-flex flex-col mb-4">
-                  <Image className="rounded-full" src={TestimonialImage02} width={48} height={48} alt="Testimonial 02" />
-                  <svg className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 13.517c0-2.346.611-4.774 1.833-7.283C3.056 3.726 4.733 1.648 6.865 0L11 2.696C9.726 4.393 8.777 6.109 8.152 7.844c-.624 1.735-.936 3.589-.936 5.56v4.644H0v-4.531zm13 0c0-2.346.611-4.774 1.833-7.283 1.223-2.508 2.9-4.586 5.032-6.234L24 2.696c-1.274 1.697-2.223 3.413-2.848 5.148-.624 1.735-.936 3.589-.936 5.56v4.644H13v-4.531z" />
-                  </svg>
+                  <Image className="logoImage" src={TestimonialImage02} alt="logoImage" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+              <div className='h3 mb-2' id='titletext'>{namesField[1]}</div>
+              <div className='h4 mb-2 text-center' >Servicios</div>
+              <div className='text-lg text-gray-400 text-center'> - Parqueadero <span className='ml-2'>🅿️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                <cite className="text-gray-200 not-italic">{precio1}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
               </div>
             </div>
 
-            {/* 3rd testimonial */}
-            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="400">
+            {/* 3ra cancha */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
               <div>
                 <div className="relative inline-flex flex-col mb-4">
-                  <Image className="rounded-full" src={TestimonialImage03} width={48} height={48} alt="Testimonial 03" />
-                  <svg className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 13.517c0-2.346.611-4.774 1.833-7.283C3.056 3.726 4.733 1.648 6.865 0L11 2.696C9.726 4.393 8.777 6.109 8.152 7.844c-.624 1.735-.936 3.589-.936 5.56v4.644H0v-4.531zm13 0c0-2.346.611-4.774 1.833-7.283 1.223-2.508 2.9-4.586 5.032-6.234L24 2.696c-1.274 1.697-2.223 3.413-2.848 5.148-.624 1.735-.936 3.589-.936 5.56v4.644H13v-4.531z" />
-                  </svg>
+                  <Image className="logoImage" src={TestimonialImage03} alt="logoImage" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+              <div className='h3 mb-2' id='titletext'>{namesField[2]}</div>
+              <div className='h4 mb-2 text-center' >Servicios</div>
+              <div className='text-lg text-gray-400 text-center'> - Parqueadero <span className='ml-2'>🅿️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                <cite className="text-gray-200 not-italic">{precio1}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
               </div>
             </div>
 
-          </div>
+            {/* 4ta cancha */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+              <div>
+                <div className="relative inline-flex flex-col mb-4">
+                  <Image className="logoImage" src={TestimonialImage04} alt="logoImage" />
+                </div>
+              </div>
+              <div className='h3 mb-2' id='titletext'>{namesField[3]}</div>
+              <div className='h4 mb-2 text-center' >Servicios</div>
+              <div className='text-lg text-gray-400 text-center'> - Parqueadero <span className='ml-2'>🅿️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Tienda  <span className='ml-14'>🏪</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                <cite className="text-gray-200 not-italic">{precio1}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
+              </div>
+            </div>
 
+            {/* 5ta cancha */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+              <div>
+                <div className="relative inline-flex flex-col mb-4">
+                  <Image className="logoImage" src={TestimonialImage05} alt="logoImage" />
+                </div>
+              </div>
+              <div className='h3 mb-2' id='titletext'>{namesField[4]}</div>
+              <div className='h4 mb-2 text-center' >Servicios</div>
+              <div className='text-lg text-gray-400 text-center'> - Parqueadero <span className='ml-2'>🅿️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Tienda  <span className='ml-14'>🏪</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                <cite className="text-gray-200 not-italic">{precio1}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
+              </div>
+            </div>
+
+            {/* 6ta cancha */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+              <div>
+                <div className="relative inline-flex flex-col mb-4">
+                  <Image className="logoImage" src={TestimonialImage06} alt="logoImage" />
+                </div>
+              </div>
+              <div className='h3 mb-2' id='titletext'>{namesField[5]}</div>
+              <div className='h4 mb-2 text-center' >Servicios</div>
+              <div className='text-lg text-gray-400 text-center'> - Parqueadero  <span className='ml-2'>🅿️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Tienda  <span className='ml-14'>🏪</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+              <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                <cite className="text-gray-200 not-italic">{precio2}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="/signup">Elegir</a>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </section>

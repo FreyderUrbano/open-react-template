@@ -82,3 +82,16 @@
     background-color: transparent;
     margin-top: 20px;
 }
+/*ESTILOS LOGOWSP PAGINA PRINCIPAL*/
+
+.logoImage{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+/*ESTILOS TESTIMONIALS*/
+
+#titletext{
+    text-align: center;
+}
