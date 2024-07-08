@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-import LogoWSP01 from '@public/images/testimonial-01.jpg'
 import TestimonialImage01 from '@/public/images/logo-wsp-01.png'
 
 export default function LogoWSP() {
@@ -10,6 +9,5 @@ export default function LogoWSP() {
                 <Image className="logoHeaderImage" src={TestimonialImage01} width={1200} height={60} alt="LogoWSP" />
             </div>
         </section>
-
     )
 }

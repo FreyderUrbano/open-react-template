@@ -27,8 +27,8 @@ export default function Plan() {
 
     return (
         //AQUI ESTOY CREANDO EL SLIDER DE IMAGENES PARA MOSTRAR LAS CANCHAS MAS VISTAS 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-            <section className="relative pt-32 pb-10 md:pt-10 md:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+            <section className="relative pt-4 pb-10 md:pt-10 md:pb-16">
                 <div className="image-container">
                     <div className="relative pt-32 pb-10 md:pt-10 md:pb-16">
                         <h1 className="h2 mb-2 text-center">NUESTRAS CANCHAS DESTACADAS</h1>

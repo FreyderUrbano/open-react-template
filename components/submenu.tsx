@@ -7,7 +7,7 @@ export default function SubMenu() {
         //Aqui voy a crear un submenu para busca tu cancha, escoje fecha y Disfruta
         <section>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-32">
-                <div className="py-12 md:py-20">
+                <div className="py-2 md:py-2">
                     {/* Items */}
                     <div id="borde" className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
                         {/* 1st item */}
