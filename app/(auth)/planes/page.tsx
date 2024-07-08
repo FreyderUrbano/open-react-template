@@ -64,6 +64,9 @@ export default function Planes() {
                         <MobileMenu />
                     </div>
                 </div>
+                <div>
+                 <div className='text-center'>PLANES</div>
+                </div>
             </header>
             {/*componente ImageScroll */}
             <ImageScroll />

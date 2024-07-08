@@ -65,26 +65,28 @@
 
 /*ESTILOS PARA PAGINA PRINCIPAL*/
 
-#logo{
+#logo {
     background: transparent;
 }
 
-#logo :hover{
+#logo :hover {
     transition: 2s;
     transform: scale(1);
 }
-#fondoBlanco{
+
+#fondoBlanco {
     background-color: white;
 }
 
 /*ESTILOS PARA MENU PRINCIPAL*/
-#menu{
+#menu {
     background-color: transparent;
     margin-top: 20px;
 }
+
 /*ESTILOS LOGOWSP PAGINA PRINCIPAL*/
 
-.logoImage{
+.logoImage {
     width: 100%;
     height: 250px;
     border-radius: 20px;
@@ -92,14 +94,27 @@
 
 /*ESTILOS TESTIMONIALS*/
 
-#titletext{
+#titletext {
     text-align: center;
 }
 
 /*ESTILOS PAGES PLANES*/
 
-.imgW{
-    width: 100%;
-    height: 250px;
+.imagen {
+    width: 1600px;
+    height:700px;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
     }
-  
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.imagen {
+    animation: zoomInOut 5s infinite alternate;
+}
