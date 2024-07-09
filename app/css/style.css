@@ -102,19 +102,38 @@
 
 .imagen {
     width: 1600px;
-    height:700px;
+    height: 500px;
     object-fit: cover;
     transition: opacity 0.5s ease;
+    animation: zoomInOut 5s infinite alternate;
 }
+
 @keyframes zoomInOut {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
-        transform: scale(1.1);
+        transform: scale(1.15);
     }
 }
 
-.imagen {
-    animation: zoomInOut 5s infinite alternate;
+.imgLeft {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.imgRight {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
 }
