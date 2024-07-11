@@ -11,6 +11,9 @@ import TestimonialImage01 from '@/public/images/cancha.jpeg'
 import TestimonialImage02 from '@/public/images/cancha1.jpeg'
 import TestimonialImage03 from '@/public/images/apache.jpg'
 import ImageScroll from '@/components/imagescroll';
+import MenuList from '@/components/menulist';
+import PlanesCanchas from '@/components/planesCanchas';
+import TituloPlanes from '@/components/tituloPlanes';
 
 const fotos = [TestimonialImage01, TestimonialImage02, TestimonialImage03]
 
@@ -58,18 +61,15 @@ export default function Planes() {
                                 </li>
                             </ul>
                         </nav>
-
                         {/* Menú móvil */}
                         {/* Agrega aquí el componente MobileMenu */}
                         <MobileMenu />
                     </div>
                 </div>
-                <div>
-                 <div className='text-center'>PLANES</div>
-                </div>
             </header>
-            {/*componente ImageScroll */}
-            <ImageScroll />
+            {/*componente PAGINA PLANES */}
+            <TituloPlanes />
+            <PlanesCanchas />
         </section>
     );
 }
