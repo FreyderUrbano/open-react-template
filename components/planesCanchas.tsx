@@ -11,32 +11,43 @@ import TestimonialImage08 from '@/public/images/corr.png'
 
 export default function PlanesCanchas() {
 
-    const imagenes = ['https://th.bing.com/th/id/R.089b16aebcfd18af6ff9c725318b65e0?rik=Ug%2fvoYlEElak8A&pid=ImgRaw&r=0',
-        'https://th.bing.com/th/id/R.c223eb1d12de592ea513a285d9294320?rik=l7Ot2%2fASfaIyMw&riu=http%3a%2f%2fstatic.t13.cl%2fimages%2fsizes%2f1200x675%2f1491127204-95410191gettyimages-488144002.jpg&ehk=dettdl4rxdcGYrLDeu4AYIjFzmztEQ2lT3bwX%2bcMI8U%3d&risl=&pid=ImgRaw&r=0',
-        'https://www.parqueygrama.com/wp-content/uploads/2018/02/canchas-de-futbol-sinteticas-grama-de-futbol.jpg']
+    {/*PRECIOS */ }
+    const precioPlanVamosAJugar = 100000
+    const VAJNormal = precioPlanVamosAJugar + 50000
+    const precioPlanInicioPartido = 150000
+    const PIPNormal = precioPlanInicioPartido + 50000
+    const precioPlanMedioTiempo = 200000
+    var MTNormal = precioPlanMedioTiempo + 50000
+    const precioPlanCampeonato = 250000
+    var PCNormal = precioPlanCampeonato + 50000
 
-    const namesField = ["Monaco", "Bomberos", "Fuerte Apache", "Miraflores", "CocaCola", "Tejar"]
-
-    const precio1 = ["$ 45.000 - $ 65.000 / hora"]
     const precio2 = ["$ 50.000 - $ 70.000 / hora"]
 
     return (
         <section>
-            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="py-12 md:py-20 border-t border-gray-800">
 
                     {/*Canchas San Juan De Pasto*/}
-                    <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
+                    <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-4 lg:gap-6 items-start lg:max-w-none">
 
-                        {/* 1ra cancha */}
-                        <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up">
-                            <div>
+                        {/* 1ra PLAN VAMOS A JUGAR*/}
+                        <div className="flex flex-col h-full bg-gray-800" data-aos="fade-up">
+                            <div className='bg-blue-800 text-center'>
                                 <div className="relative inline-flex flex-col mb-4">
-                                    <Image className="logoImage" src={TestimonialImage01} alt="logoImage" />
+                                    <div className='bg-red-800'>
+                                        <div className='h5 mb-1 mt-1'>Plan vamos a jugar</div>
+                                    </div>
+                                    <div className='h5 mb-1 mt-2'>Precio normal {VAJNormal}</div>
+                                    <div className='h4 mb-1 mt-2'>{precioPlanVamosAJugar}</div>
+                                    <div className='h6 mb-1 mt-2'>Texto sobre el precio y el plan</div>
                                 </div>
                             </div>
-                            <div className='h3 mb-2' id='titletext'>{namesField[0]}</div>
-                            <div className='h4 mb-2 text-center' >Servicios</div>
+                            <div className='bg-blue-600'>
+
+                            </div>
+
+                            <div className='h4 mb-2 text-center mt-6' >Servicios</div>
                             <div className='text-lg text-gray-400 text-center'> - Parqueadero  <span className='ml-2'>🅿️</span></div>
                             <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
                             <div className='text-lg text-gray-400 text-center'> - Promociones <span className='ml-2'>🕒</span></div>
@@ -46,39 +57,81 @@ export default function PlanesCanchas() {
                             </div>
                         </div>
 
-                        {/* 2nd cancha */}
-                        <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
-                            <div>
+                        {/* 2da PLAN INICIO DEL PARTIDO*/}
+                        <div className="flex flex-col h-full bg-gray-800" data-aos="fade-up">
+                            <div className='bg-blue-800 text-center'>
                                 <div className="relative inline-flex flex-col mb-4">
-                                    <Image className="logoImage" src={TestimonialImage02} alt="logoImage" />
+                                    <div className='bg-red-800'>
+                                        <div className='h5 mb-1 mt-1'>Plan inicio del partido</div>
+                                    </div>
+                                    <div className='h5 mb-1 mt-2'>Precio normal {PIPNormal}</div>
+                                    <div className='h4 mb-1 mt-2'>{precioPlanInicioPartido}</div>
+                                    <div className='h6 mb-1 mt-2'>Texto sobre el precio y el plan</div>
                                 </div>
                             </div>
-                            <div className='h3 mb-2' id='titletext'>{namesField[1]}</div>
-                            <div className='h4 mb-2 text-center' >Servicios</div>
-                            <div className='text-lg text-gray-400 text-center'> - Parqueadero <span className='ml-2'>🅿️</span></div>
+                            <div className='bg-blue-600'>
+
+                            </div>
+
+                            <div className='h4 mb-2 text-center mt-6' >Servicios</div>
+                            <div className='text-lg text-gray-400 text-center'> - Parqueadero  <span className='ml-2'>🅿️</span></div>
                             <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
-                            <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+                            <div className='text-lg text-gray-400 text-center'> - Promociones <span className='ml-2'>🕒</span></div>
                             <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
                             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
-                                <cite className="text-gray-200 not-italic">{precio1}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
+                                <cite className="text-gray-200 not-italic">{precio2}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
                             </div>
                         </div>
 
-                        {/* 3ra cancha */}
-                        <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
-                            <div>
+                        {/* 3ra PLAN MEDIO TIEMPO */}
+                        <div className="flex flex-col h-full bg-gray-800" data-aos="fade-up">
+                            <div className='bg-blue-800 text-center'>
                                 <div className="relative inline-flex flex-col mb-4">
-                                    <Image className="logoImage" src={TestimonialImage03} alt="logoImage" />
+                                    <div className='bg-red-800'>
+                                        <div className='h5 mb-1 mt-1'>Plan de medio tiempo</div>
+                                    </div>
+                                    <div className='h5 mb-1 mt-2'>Precio normal {MTNormal}</div>
+                                    <div className='h4 mb-1 mt-2'>{precioPlanMedioTiempo}</div>
+                                    <div className='h6 mb-1 mt-2'>Texto sobre el precio y el plan</div>
                                 </div>
                             </div>
-                            <div className='h3 mb-2' id='titletext'>{namesField[2]}</div>
-                            <div className='h4 mb-2 text-center' >Servicios</div>
-                            <div className='text-lg text-gray-400 text-center'> - Parqueadero <span className='ml-2'>🅿️</span></div>
+                            <div className='bg-blue-600'>
+
+                            </div>
+
+                            <div className='h4 mb-2 text-center mt-6' >Servicios</div>
+                            <div className='text-lg text-gray-400 text-center'> - Parqueadero  <span className='ml-2'>🅿️</span></div>
                             <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
-                            <div className='text-lg text-gray-400 text-center'> - Techada <span className='ml-10'>⛱️</span></div>
+                            <div className='text-lg text-gray-400 text-center'> - Promociones <span className='ml-2'>🕒</span></div>
                             <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
                             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
-                                <cite className="text-gray-200 not-italic">{precio1}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
+                                <cite className="text-gray-200 not-italic">{precio2}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
+                            </div>
+                        </div>
+
+                        {/* 4ta PLAN DE CAMPEONATO*/}
+                        <div className="flex flex-col h-full bg-gray-800" data-aos="fade-up">
+                            <div className='bg-blue-800 text-center'>
+                                <div className="relative inline-flex flex-col mb-4">
+                                    <div className='bg-red-800'>
+                                        <div className='h5 mb-1 mt-1'>Plan de campeonato</div>
+                                    </div>
+                                    <div className='h5 mb-1 mt-2'>Precio normal {PCNormal}</div>
+                                    <div className='h4 mb-1 mt-2'>{precioPlanCampeonato}</div>
+                                    <div className='h6 mb-1 mt-2'>Texto sobre el precio y el plan</div>
+                                </div>
+                            </div>
+                            <div className='bg-blue-600'>
+
+                            </div>
+
+                            <div className='h4 mb-2 text-center mt-6' >Servicios</div>
+                            <div className='text-lg text-gray-400 text-center'> - Parqueadero  <span className='ml-2'>🅿️</span></div>
+                            <div className='text-lg text-gray-400 text-center'> - Tienda <span className='ml-14'>🏪</span></div>
+                            <div className='text-lg text-gray-400 text-center'> - Promociones <span className='ml-2'>🕒</span></div>
+                            <div className='text-lg text-gray-400 text-center'> - Y mas ....</div>
+                            <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700 text-center">
+                                <cite className="text-gray-200 not-italic">{precio2}</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Elegir</a>
                             </div>
                         </div>
                     </div>
