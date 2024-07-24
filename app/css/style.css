@@ -137,3 +137,27 @@
     opacity: 0.5;
     transition: opacity 0.5s ease;
 }
+
+/*ESTILOS PLANES CANCHAS*/
+
+#vamosajugar:hover{
+    background-color: #f1f1f1;
+    transition: 2s;
+    transform: scale(1);
+    color: black;
+}
+
+#prom:hover{
+    animation: zoomInOut 5s infinite alternate;
+}
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}

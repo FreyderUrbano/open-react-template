@@ -8,6 +8,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'white': '#ffffff',
+        'slate': '#94a3b8',
+        'gray-600': '#4b5563',
+        'purple': '#3f3cbb',
+        'midnight': '#121063',
+        'metal': '#565584',
+        'tahiti': '#3ab7bf',
+        'silver': '#ecebff',
+        'amber-400': '#eab308',
+        'amber-500': '#f59e0b',
+        'amber-200': '#fde68a',
+        'red': '#dc2626',
+        'blue-700': '#1d4ed8',
+        'slate-950': '#020617',
+        'bubble-gum': '#ff77e9',
+        'bermuda': '#78dcca',
         gray: {
           100: '#EBF1F5',
           200: '#D9E3EA',
